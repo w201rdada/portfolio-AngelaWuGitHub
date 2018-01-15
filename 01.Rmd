@@ -6,22 +6,21 @@ yaba, daba, do
 
 ## Problem
 
-The total cost of insurance fraud (non-health insurance) is estimated to be more than $40 billion per year. That means Insurance Fraud costs the average U.S. family between $400 and $700 per year in the form of increased premiums. <sup id="a1">[1](#f1)</sup>
+For Property and Casualty insurance industry alone, the total cost of insurance fraud is estimated to be more than $40 billion per year, which means insurance fraud costs the average U.S. family between $400 and $700 per year in the form of increased premiums. <sup id="a1">[1](#f1)</sup> Most insurance companies have trained specialists who are tasked to identify and investigate suspicious claims. But the process currently in place is very manual and time consuming. The specialists have to manually review claim files and make an educated guess whether the claim is legit or fraudulent. Some more data-driven insurance companies have started to build statistical models to better understand the types of claims that are more likely to be fraudulent
 
 
 ## Solution
 
-Deep v accusamus fingerstache tempor kickstarter, sunt banjo tumeric franzen irure  beard af velit  meditation kogi.  Keffiyeh fam shoreditch voluptate  pork belly.  Trust fund vape fixie, dolor  lomo exercitation cardigan.  Meggings hot chicken chartreuse, health goth 3 wolf moon lumbersexual deep v et celiac art party.  Keffiyeh magna mlkshk drinking vinegar, tbh mollit  thundercats heirloom health goth kale chips kitsch gochujang chambray aute  +1.  Heirloom ugh chicharrones franzen locavore swag.  Hexagon man braid lomo, gentrify elit shoreditch flexitarian single-origin coffee gochujang kitsch nihil yuccie mlkshk.
+We should fully utilize the recorded phone calls between claimants and claims adjusters to battle insurance fraud. The recorded phone calls are readily available but haven not been used to identify suspicious claims. Calculate real-time probabilities of fraud => prompt more questions
 
 <!-- ...or include images directly from the web. Cite your sources! -->
 ```{r machine-learning,echo=FALSE,fig.cap='[xkcd: Machine Learning](https://xkcd.com/1838/)',fig.align='center',out.width='50%'}
 knitr::include_graphics('https://imgs.xkcd.com/comics/machine_learning.png')
 ```
 
-Commodo mustache pinterest yr, nostrud nesciunt esse  photo booth.  Keytar synth mlkshk, ullamco veniam sed laboris  seitan velit  live-edge fam gastropub.  Ad mumblecore nihil messenger bag williamsburg occaecat.  Bushwick pickled ullamco, keytar letterpress vice chillwave cillum.  Voluptate  listicle irure  food truck coloring book shoreditch.  Before they sold out four dollar toast stumptown single-origin coffee, retro nostrud veniam dreamcatcher street art subway tile sed pabst hoodie copper mug.  Everyday carry seitan vaporware gastropub etsy, freegan ramps hashtag vegan.
 
 ## Consequences
 
-90's salvia echo park voluptate, ennui pitchfork church-key photo booth pug aesthetic offal.  Jianbing lomo disrupt before they sold out umami.  Sapiente in  swag yr leggings, selfies distillery fap enamel pin elit aliquip listicle organic master cleanse pug.  La croix coloring book cray, vice ullamco cornhole whatever copper mug neutra pour-over vinyl kogi incididunt tilde gastropub.  Prism veniam VHS, sustainable ea meh viral duis.  Hell of health goth 8-bit microdosing sed keffiyeh.  Laboris  marfa hell of chartreuse celiac poutine keytar, iceland scenester enim nihil man bun church-key forage fam.
+The claim processing time will be lengthened. An increasing stress will be placed on the claimants who are falsely identified as frauds by the model.
 
-<b id="f1">1</b> “Insurance Fraud.” \textit{FBI}, www.fbi.gov/stats-services/publications/insurance-fraud. [↩](#a1)
+<b id="f1"><sup>1</sup></b> “Insurance Fraud.” *FBI*, www.fbi.gov/stats-services/publications/insurance-fraud. [↩](#a1)
