@@ -10,7 +10,7 @@ insurance, fraud, solution, real-time, data science
 According to the latest report from Insurance Information Institute, property/casualty insurance fraud costs insurers about $34 billion per year, which is about 10% of the industry’s incurred losses and loss adjustment expenses. <sup id="a1">[1](#f1)</sup> Any insurer who can accurately identify fraudulent claims will be able to eliminate fraudulent payments and reduce the total cost of insurance. Correspondingly, the premium charged to an average policyholder will be lowered considerably, gaining a competitive advantage for the company.
 
 Currently, we hire many fraud detection specialists to review claim files and cross-reference with ISO data and NICB alerts in order to identify fraudulent claims. This process is very manual and time consuming. Our statisticians also built logistic regression models with the hope to better understand the types of claims that are more likely to be fraudulent. However, due to the limited number of claims characteristics specified in the model, the logistic regression models didn’t perform well. At the end of the day, we still lack efficient ways to detect insurance fraud.
- 
+
 
 ## Solution
 
@@ -19,12 +19,14 @@ The phone calls between claimants and claims adjusters have been monitored and r
 The conversation between claimants and claims adjusters should be automatically converted to text and stored in the corresponding claim file. Text mining techniques should be applied in real-time to structure the input text (i.e., the conversation) and seek out key words. The key words should be automatically compared against credible sources to confirm the validity of claimants’ statements. For example, if the claimant mentioned weather, his/her statement should be verified against the weather source. As another example, if the claimant mentioned police, his/her statement should be examined against the police report filed. In addition, Sentiment analysis should be performed to identify unusual emotions and tones. If prior conversations exist, the current conversation should be compared against prior conversations to discover inconsistencies in claimants’ statements. 
 
 The results of text analyses above should be fed into a neural network model to produce a suspicious claim indicator. The suspicious claim indicator alerts the claims adjusters and prompts them to ask additional questions. The suspicious claim indicator is continuously being updated as the conversation goes on. Claims adjusters are encouraged to provide feedback to the model based on their experience and intuition. Their feedback is another important input to the neural network model. With thousands of claims a day, these analyses can be fine-tuned on the fly and evolve into a more robust model.
- 
+
+
 ## Consequences
 
-The proposed solution utilizes text mining and deep learning techniques to automate the fraud detection process, which is more efficient than relying on the manual work conducted by fraud detection specialists. It is also more predictive than traditional statistical models because it incorporates the entire conversation between claimants and claims adjusters into the analyses rather than just using the claim characteristics summarized by claims adjusters. In addition, statisticians work independently from the front-line claims adjusters. As a result, there is a significant delay in determining fraud and lack of means to request more information.  Under the proposed solution, near-instantaneous feedback from the model guides claim adjusters in gathering additional information that could lead to determination of fraudulent claims. 
+The proposed solution utilizes text mining and deep learning techniques to automate the fraud detection process, which is more efficient than relying on the manual work conducted by fraud detection specialists. It is also more predictive than traditional statistical models because it incorporates the entire conversation between claimants and claims adjusters into the analyses rather than just using the claim characteristics summarized by claims adjusters. In addition, statisticians work independently from the front-line claims adjusters. As a result, there is a significant delay in determining fraud and lack of means to request more information.  Under the proposed solution, near-instantaneous feedback from the model guides claims adjusters in gathering additional information that could lead to determination of fraudulent claims. 
 
 However, one potential drawback of using real-time analyses and feedback is that the claim service time may be lengthened if follow-up questions are indicated by the model. This could negatively impact our customer satisfaction in claim handling experience. 
 
 
+##### Footnote
 <b id="f1"><sup>1</sup></b> “Background on: Insurance fraud.” *Insurance Information Institute*, https://www.iii.org/article/background-on-insurance-fraud. [↩](#a1)
