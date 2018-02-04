@@ -7,7 +7,7 @@ insurance, fraud, solution, real-time, data science
 
 ## Problem
 
-According to the latest report from Insurance Information Institute, property/casualty insurance fraud costs insurers about $34 billion per year, which is about 10% of the industry’s incurred losses and loss adjustment expenses. <sup id="a1">[1](#f1)</sup> [@saxenian1994] Any insurer who can accurately identify fraudulent claims will be able to eliminate fraudulent payments and reduce the total cost of insurance. Correspondingly, the premium charged to an average policyholder will be lowered considerably, gaining a competitive advantage for the company.
+According to the latest report from Insurance Information Institute, property/casualty insurance fraud costs insurers about $34 billion per year, which is about 10% of the industry’s incurred losses and loss adjustment expenses. <sup id="a1">[1](#f1)</sup> [@noauthor_facts_nodate] Any insurer who can accurately identify fraudulent claims will be able to eliminate fraudulent payments and reduce the total cost of insurance. Correspondingly, the premium charged to an average policyholder will be lowered considerably, gaining a competitive advantage for the company.
 
 Currently, we hire many fraud detection specialists to review claim files and cross-reference with ISO data and NICB alerts in order to identify fraudulent claims. This process is very manual and time consuming. Our statisticians also built logistic regression models with the hope to better understand the types of claims that are more likely to be fraudulent. However, due to the limited number of claims characteristics specified in the model, the logistic regression models didn’t perform well. At the end of the day, we still lack efficient ways to detect insurance fraud.
 
