@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>W201 Portfolio</title>
+  <meta name="description" content="W201 Portfolio">
+  <meta name="generator" content="bookdown 0.5.9 and GitBook 2.6.7">
+
+  <meta property="og:title" content="W201 Portfolio" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="W201 Portfolio" />
+  
+  
+  
+
+<meta name="author" content="Oski Bear">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="slug-two.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Oski Bear</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome!</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#about-the-author"><i class="fa fa-check"></i>About the author</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="Insurance-Fraud.html"><a href="Insurance-Fraud.html"><i class="fa fa-check"></i>Battle Insurance Fraud with Data Science</a><ul>
+<li class="chapter" data-level="" data-path="Insurance-Fraud.html"><a href="Insurance-Fraud.html#problem"><i class="fa fa-check"></i>Problem</a></li>
+<li class="chapter" data-level="" data-path="Insurance-Fraud.html"><a href="Insurance-Fraud.html#solution"><i class="fa fa-check"></i>Solution</a></li>
+<li class="chapter" data-level="" data-path="Insurance-Fraud.html"><a href="Insurance-Fraud.html#consequences"><i class="fa fa-check"></i>Consequences</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="slug-two.html"><a href="slug-two.html"><i class="fa fa-check"></i>My second cool idea</a><ul>
+<li class="chapter" data-level="" data-path="slug-two.html"><a href="slug-two.html#a-beginning."><i class="fa fa-check"></i>A beginning.</a></li>
+<li class="chapter" data-level="" data-path="slug-two.html"><a href="slug-two.html#a-middle."><i class="fa fa-check"></i>A middle.</a></li>
+<li class="chapter" data-level="" data-path="slug-two.html"><a href="slug-two.html#an-end."><i class="fa fa-check"></i>An end.</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/oskibear" target="blank">GitHub</a></li>
+<li><a href="https://www.ischool.berkeley.edu/people/oski-bear" target="blank">UC Berkeley</a></li>
+<li><a href="https://www.linkedin.com/in/oskibear/" target="blank">LinkedIn</a></li>
+<li><a href="https://www.wired.com/2013/02/friendster-autopsy/" target="blank">Friendster</a></li>        
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">W201 Portfolio</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="Insurance-Fraud" class="section level1">
+<h1>Battle Insurance Fraud with Data Science</h1>
+<div id="keywords" class="section level4 unnumbered">
+<h4>Keywords</h4>
+<p>insurance, fraud, solution, real-time, data science</p>
+</div>
+<div id="problem" class="section level2">
+<h2>Problem</h2>
+<p>According to the latest report from Insurance Information Institute, property/casualty insurance fraud costs insurers about $34 billion per year, which is about 10% of the industry’s incurred losses and loss adjustment expenses <span class="citation">(“Facts + Statistics: Industry Overview III” <a href="#ref-noauthor_facts_nodate">2018</a>)</span>. Any insurer who can accurately identify fraudulent claims will be able to eliminate fraudulent payments and reduce the total cost of insurance. Correspondingly, the premium charged to an average policyholder will be lowered considerably, gaining a competitive advantage for the company.</p>
+<p>Currently, we hire many fraud detection specialists to review claim files and cross-reference with ISO data and NICB alerts in order to identify fraudulent claims. This process is very manual and time consuming. Our statisticians also built logistic regression models with the hope to better understand the types of claims that are more likely to be fraudulent. However, due to the limited number of claims characteristics specified in the model, the logistic regression models didn’t perform well. At the end of the day, we still lack efficient ways to detect insurance fraud.</p>
+</div>
+<div id="solution" class="section level2">
+<h2>Solution</h2>
+<p>The phone calls between claimants and claims adjusters have been monitored and recorded for quality and training purposes for many years now. These phone calls are the primary communication between claimants and insurers and are readily available for analysis. We should fully utilize information extracted from phone calls in real-time to ensure the validity of claims.</p>
+<p>The conversation between claimants and claims adjusters should be automatically converted to text and stored in the corresponding claim file. Text mining techniques should be applied in real-time to structure the input text (i.e., the conversation) and seek out key words. The key words should be automatically compared against credible sources to confirm the validity of claimants’ statements. For example, if the claimant mentioned weather, his/her statement should be verified against the weather source. As another example, if the claimant mentioned police, his/her statement should be examined against the police report filed. In addition, Sentiment analysis should be performed to identify unusual emotions and tones. If prior conversations exist, the current conversation should be compared against prior conversations to discover inconsistencies in claimants’ statements.</p>
+<p>The results of text analyses above should be fed into a neural network model to produce a suspicious claim indicator. The suspicious claim indicator alerts the claims adjusters and prompts them to ask additional questions. The suspicious claim indicator is continuously being updated as the conversation goes on. Claims adjusters are encouraged to provide feedback to the model based on their experience and intuition. Their feedback is another important input to the neural network model. With thousands of claims a day, these analyses can be fine-tuned on the fly and evolve into a more robust model.</p>
+</div>
+<div id="consequences" class="section level2">
+<h2>Consequences</h2>
+<p>The proposed solution utilizes text mining and deep learning techniques to automate the fraud detection process, which is more efficient than relying on the manual work conducted by fraud detection specialists. It is also more predictive than traditional statistical models because it incorporates the entire conversation between claimants and claims adjusters into the analyses rather than just using the claim characteristics summarized by claims adjusters. In addition, statisticians work independently from the front-line claims adjusters. As a result, there is a significant delay in determining fraud and lack of means to request more information. Under the proposed solution, near-instantaneous feedback from the model guides claims adjusters in gathering additional information that could lead to determination of fraudulent claims.</p>
+<p>However, one potential drawback of using real-time analyses and feedback is that the claim service time may be lengthened if follow-up questions are indicated by the model. This could negatively impact our customer satisfaction in claim handling experience.</p>
+
+</div>
+</div>
+<h3>References</h3>
+<div id="refs" class="references">
+<div id="ref-noauthor_facts_nodate">
+<p>“Facts + Statistics: Industry Overview III.” 2018. Accessed January 29. <a href="https://www.iii.org/fact-statistic/facts-statistics-industry-overview" class="uri">https://www.iii.org/fact-statistic/facts-statistics-industry-overview</a>.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="slug-two.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": false
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/w201rdada/portfolio-MYGITHUBUSER/edit/master/01.Rmd",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+</body>
+
+</html>
