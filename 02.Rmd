@@ -1,31 +1,23 @@
-# Pay for YOUR Insurance Risk, Not the Average Risk  {#Insurance-Pricing}
+# Next Generation of Insurance Pricing {#Insurance-Pricing}
 
 #### Keywords {-}
 
-yaba, daba, do
+insurance, pricing, smartphone application, driving data, driving behavior, driving environment, new model approach
 
-## Problem
 
-Currently, auto insurers collect "static" information about policyholders and use it to price insurance premiums. This information is usually in two categories: drivers' characteristics (driver's gender, age, etc.) and vehicle's information (make and model, model year, etc.). This type of data is easily available, and can be easily verified, and thus has been used as predictors for insurance losses [1]. However, but lack a strong relationship with occurrence of accident. Accidents are currently reported by the driver sometime after the accident. Sometimes the exact time and location of accidents cannot be recalled or identified. 
+## Limited Data = Bad Model
+Currently, auto insurers collect "static" information about policyholders and use it to price their insurance premiums. The data comes in two categories: drivers' characteristics (driver's gender, age, etc.) and vehicle's information (make and model, model year, etc.). Because this type of data is readily available and easily verifiable, it has been used as predictors for insurance losses [1]. Policy characteristics don't change much from year to year, while accidents can be influenced by many factors. It's not theoretically sound to use "static" predictors (i.e. policy characteristics) to predict a moving target (i.e. accidents). By incorporating driving behavior and driving environment into the model, we can more accurately price for individual policyholder’s risk.
 
-## Solution
 
-* Cell phone is widely used and the accelerometer on the phone can be used to monitor the movement of the vehicle, and keep track of driving habit.
-* Using cell phone accelerometer data alone to identify accidents could be hard at the beginning since we don't know how data looks like when accidents occur. 
-* In order to get a more accurate reading on when accidents happen, we can offer a one-click service to drivers (call policy, call ambulance if necessary, notify the agent, notify toll company if necessary). 
-* Benefits: 
-  * Better service to the policyholders
-  * Automatically notify multiple parties, calm the drivers, help is on the way
-  * Get immediate medical help, by sharing the location => reduce medical expenses 
-  * Collect accurate accident data (g-force, location, pull relevant traffic information, pull relevant weather information)
-* Analyze the driving behavior right before the accidents, weather, traffic, location of accidents
-  * Maybe some intersection/road is prone to accidents
-  * Maybe weather
-  * Maybe driving behavior (speeding, fast turning, reckless driving)
-  * Maybe driver was on the phone
-* Build a model to better predict the riskiness of policy by comparing the similarity of driving behavior/environment with those of accidents
+## Identify the cause => Gather, Model, Repeat
+One of the primary reasons why only policy characteristics are used in today’s modeling but not accident information is because we lack of reliable ways to obtain accident related information, even the exact time and location of the accident cannot always be identified. People don’t always report accidents to their agents or online in a timely manner, and their memory becomes blurry and confused about specific details of accidents the longer they wait. As a result, inaccurate information sometimes gets reported.  
 
-## Consequences
+Our solution is to build a smartphone application that collects policyholders’ driving data and allows them to report accidents easily and quickly at the scene. This application gives users an option to call the police with a one-point click. It will automatically send their name, license plate, and current location to the police and send an ambulance or road side assistance if desired. At the same time, this application serves as a more reliable source of accident time/location to the insurer. From the timestamp, the insurer can isolate the driving behavior prior to the accident, which is critical in understanding the potential causes of accidents. In addition, weather and traffic conditions can be joined to the driving data by querying external data sources.   
 
-* Better understand the driving behavior and environmental factors contributing to car accidents
-* Not all policyholders are comfortable with insurers collecting driving data, so data could be subject to self-selection bias.
+With thousands of accidents occurring every day, the insurer will have a growing collection of accident data, from which a model can be built to understand how one’s driving behavior and environment can lead to an accident. For example, speeding in dense traffic accounts for x% of accidents. Based on each policyholder’s driving habits characterized from the driving data, the insurer can calculate their likelihood of having an accident and quantify their risk in the form of premium. As the policyholder’s driving habits improve or deteriorate, the premium will be adjusted accordingly. 
+
+
+## Individualized Service and Premium to the Benefit of All
+This application is beneficial to both policyholders and insurers. It provides policyholders an easy way to report accidents at the scene and alleviates their stress of notifying multiple parties (police, ambulance, road side assistance, insurance agent, etc.). It also allows insurers to better understand the driving behavior and environmental factors contributing to car accidents and build a better model to quantify the risk of each policyholder. Last but not least, this application promotes a safer driving behavior. Knowing that good driving behaviors (e.g., non-speeding, gentle turns) reduce their premium, policyholders are more likely to drive safely.  
+
+Unfortunately, not everyone has a smartphone, so this application cannot roll out to every driver on the road. Also, not every policyholder with a smartphone is comfortable with insurers collecting driving data, so data could be subject to self-selection bias.
