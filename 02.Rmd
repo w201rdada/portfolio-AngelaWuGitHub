@@ -1,25 +1,23 @@
-# My second cool idea {#slug-two}
+# Next Generation of Insurance Pricing {#Insurance-Pricing}
 
 #### Keywords {-}
 
-yaba, daba, do
-
-## A beginning.
-
-Nulla  sint  art party ex, mlkshk disrupt selvage 90's.  Umami sed slow-carb, fugiat  dolore nihil glossier magna migas actually farm-to-table microdosing keytar fixie.  IPhone fashion axe pinterest, cardigan street art quinoa banh mi bitters mollit  commodo pok pok culpa  delectus ut air plant.  Offal edison bulb ex, celiac 8-bit vaporware polaroid thundercats flannel kickstarter labore.  Activated charcoal portland af tousled microdosing woke, in  thundercats consectetur gluten-free hammock duis  next level DIY.  Keffiyeh commodo velit  mollit  brunch, cronut edison bulb banh mi swag stumptown crucifix hell of.  Brunch williamsburg try-hard, seitan literally vexillologist venmo DIY pariatur nesciunt master cleanse XOXO.
-
-## A middle.
-
-8-bit synth irony nisi wolf, street art dreamcatcher flannel placeat selvage health goth sriracha.  Glossier labore ex venmo, cillum  live-edge jianbing everyday carry af cray laborum incididunt eiusmod jean shorts.  Normcore slow-carb lyft letterpress, beard tilde art party.  Poke marfa incididunt tempor duis.  Iceland fam ex beard, activated charcoal vaporware nesciunt lyft cronut four dollar toast irony.  Officia  stumptown voluptate  unicorn culpa  bushwick.  Mollit  vero af marfa deserunt  flexitarian.
+insurance, pricing, smartphone application, driving data, driving behavior, driving environment, new model approach
 
 
-```{r experimental,echo=F,results='asis',eval=F}
-data.table::fread('https://raw.githubusercontent.com/UCB-MIDS/experiments-causality/master/data/GerberGreenBook_Chapter3_Donations.csv?token=ABNmuX-Q14rzQ4teItDenc9L5Wo2flncks5ZL5qEwA%3D%3D') %>% stargazer::stargazer(type = 'html',title = 'Something from W241 Experiments and Causality')
-```
+## Limited Data = Bad Model
+Currently, auto insurers collect "static" information about policyholders and use it to price their insurance premiums. The data comes in two categories: drivers' characteristics (driver's gender, age, etc.) and vehicle's information (make and model, model year, etc.). Because this type of data is readily available and easily verifiable, it has been used as predictors for insurance losses [@international_casualty_nodate]. Policy characteristics don't change much from year to year, while accidents can be influenced by many factors. It's not theoretically sound to use "static" predictors (i.e. policy characteristics) to predict a moving target (i.e. accidents). By incorporating driving behavior and driving environment into the model, we can more accurately price for individual policyholder’s risk.
 
 
-Laborum williamsburg sunt whatever, DIY reprehenderit  retro vaporware id  hella flannel sartorial vero fugiat  before they sold out.  Copper mug salvia keffiyeh, neutra nostrud iceland keytar kogi church-key quinoa ramps mlkshk.  Seitan mollit  3 wolf moon, forage shabby chic cillum  church-key tofu exercitation aliquip.  Church-key distillery flexitarian meh incididunt retro, ugh wolf selvage hashtag.  Bicycle rights 90's officia  vape.  Listicle post-ironic vape ex.  Gluten-free lomo tumeric, yuccie everyday carry tempor put a bird on it knausgaard nisi ugh skateboard VHS.
+## Identify the Cause => Gather, Model, Repeat
+One of the primary reasons why only policy characteristics are used in today’s modeling but not accident information is because we lack of reliable ways to obtain accident related information, even the exact time and location of the accident cannot always be identified. People don’t always report accidents to their agents or online in a timely manner, and their memory becomes blurry and confused about specific details of accidents the longer they wait. As a result, inaccurate information sometimes gets reported.  
 
-## An end.
+Our solution is to build a smartphone application that collects policyholders’ driving data and allows them to report accidents easily and quickly at the scene. This application gives users an option to call the police with a one-point click. It will automatically send their name, license plate, and current location to the police and send an ambulance or road side assistance if desired. At the same time, this application serves as a more reliable source of accident time/location to the insurer. From the timestamp, the insurer can isolate the driving behavior prior to the accident, which is critical in understanding the potential causes of accidents. In addition, weather and traffic conditions can be joined to the driving data by querying external data sources.   
 
-Kombucha pok pok lomo, forage bicycle rights paleo kickstarter literally.  Hot chicken dolor  vegan accusamus master cleanse tousled, yuccie cliche retro aesthetic bushwick actually.  Ennui viral VHS pitchfork pop-up cornhole, nihil quinoa scenester gentrify occaecat  YOLO anim.  Umami copper mug live-edge, air plant meditation bushwick chartreuse adipisicing tousled.  Art party affogato chicharrones, photo booth enim swag vero meh seitan +1 activated charcoal nihil.  Etsy gluten-free authentic mixtape.  Shabby chic duis  90's pop-up pinterest, lumbersexual mollit  cillum.
+With thousands of accidents occurring every day, the insurer will have a growing collection of accident data, from which a model can be built to understand how one’s driving behavior and environment can lead to an accident. For example, speeding in dense traffic accounts for x% of accidents. Based on each policyholder’s driving habits characterized from the driving data, the insurer can calculate their likelihood of having an accident and quantify their risk in the form of premium. As the policyholder’s driving habits improve or deteriorate, the premium will be adjusted accordingly. 
+
+
+## Individualized Service and Premium to the Benefit of All
+This application is beneficial to both policyholders and insurers. It provides policyholders an easy way to report accidents at the scene and alleviates their stress of notifying multiple parties (police, ambulance, road side assistance, insurance agent, etc.). It also allows insurers to better understand the driving behavior and environmental factors contributing to car accidents and build a better model to quantify the risk of each policyholder. Last but not least, this application promotes a safer driving behavior. Knowing that good driving behaviors (e.g., non-speeding, gentle turns) reduce their premium, policyholders are more likely to drive safely.  
+
+Unfortunately, not everyone has a smartphone, so this application cannot roll out to every driver on the road. Also, not every policyholder with a smartphone is comfortable with insurers collecting driving data, so data could be subject to self-selection bias.
