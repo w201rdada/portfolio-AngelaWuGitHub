@@ -15,7 +15,7 @@ Family Video owner, you are one of the few remaining brick and mortar movie rent
 Currently, there are at least two types of internal data available to you, one is customer transactional data and the other is inventory data. The customer transactional data details customer names, phone numbers, email addresses, checked out movies, check-out dates, intended return dates, actual return dates, etc. Inventory data contains a list of movies offered and the total number of copies ordered for each movie. You can bridge those two datasets together to find out the historical demand for each movie over time. Below is an illustration of the summarized daily longitudinal demand data for a particular movie. In this example, the number of checked out copies is equal to the total inventory level on Days 1, 2, 5, 8, and 9. Those data points are censored and the true demand is unknown. As it stands, there was inventory deficiency on those days.
 
 ```{r BigIdea2-graph,echo=FALSE,fig.align='center',out.width='50%'}
-knitr::include_graphics('img/BigIdea2-graph.png')
+knitr::include_graphics('img/BigIdea2-graph.PNG')
 ```
 You should then merge your longitudinal demand data with movie characteristics, such as genre, leading actors/actresses, director, box office, and audience rating. Tobit censored regression models [@mcdonald_uses_1980] can be used to build the initial demand model using historical demand as the target and movie characteristics as regressors. Random survival forests [@ishwaran_random_2008] can be used to forecast the demand decay rates, varying by the predicted initial demand. The combination of these two models will give you a reasonable prediction of rental demand over time. 
 
