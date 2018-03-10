@@ -2,7 +2,7 @@
 
 #### Keywords {-}
 
-Family Video, movie rental, inventory management, data driven model
+Family Video, movie rentals, inventory management, data driven model
 
 
 ## Family Video, We Have a Problem 
@@ -14,14 +14,14 @@ Family Video owner, you are one of the few remaining brick and mortar movie rent
 
 Currently, there are at least two types of internal data available to you, one is customer transactional data and the other is inventory data. The customer transactional data details customer names, phone numbers, email addresses, checked out movies, check-out dates, intended return dates, actual return dates, etc. Inventory data contains a list of movies offered and the total number of copies ordered for each movie. You can bridge those two datasets together to find out the historical demand for each movie over time. Below is an illustration of the summarized daily longitudinal demand data for a particular movie. In this example, the number of checked out copies is equal to the total inventory level on Days 1, 2, 5, 8, and 9. Those data points are censored and the true demand is unknown. As it stands, there was inventory deficiency on those days.
 
-```{r BigIdea2_Graph,echo=FALSE,fig.align='center',out.width='50%'}
-knitr::include_graphics('img/BigIdea2_Graph.png')
+```{r BigIdea2-graph,echo=FALSE,fig.align='center',out.width='50%'}
+knitr::include_graphics('img/BigIdea2-graph.png')
 ```
 You should then merge your longitudinal demand data with movie characteristics, such as genre, leading actors/actresses, director, box office, and audience rating. Tobit censored regression models [@mcdonald_uses_1980] can be used to build the initial demand model using historical demand as the target and movie characteristics as regressors. Random survival forests [@ishwaran_random_2008] can be used to forecast the demand decay rates, varying by the predicted initial demand. The combination of these two models will give you a reasonable prediction of rental demand over time. 
 
 You should also sell off excess copies as soon as possible because the longer you wait, the lower the sale price you will get due to lower demand. At the same time, you need to keep enough copies so that unanticipated variation in demand can be satisfied the vast majority of the time. I would recommend keeping the number of copies at the upper confidence limit of projected demand and selling off the rest. Last but not least, optimization algorithms can be applied to determine the optimal number of copies you should order for each movie that will maximize the sum of rental revenue and sale revenue net of purchase cost. 
 
-As new DVDs release every month, you can repeatedly assess the performance of the demand model as well as the optimization strategy. You can continue to refine the model by tweaking different hyperparameters as well as incorporating new data.
+As new movies release every week, you can repeatedly assess the performance of the demand model as well as the optimization strategy. You can continue to refine the model by tweaking different hyperparameters as well as incorporating new data.
 
 
 ## Two Thumbs Up
