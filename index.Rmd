@@ -23,7 +23,7 @@ readLines('https://www.zotero.org/api/users/4665679/items/top?limit=25&format=bi
 knitr::include_graphics('img/hello-world.png')
 ```
 
-Pariatur sapiente anim  waistcoat bicycle rights.  Cupidatat  chambray portland direct trade, XOXO odio gochujang banjo deep v sustainable.  Sint  jianbing DIY humblebrag heirloom exercitation ennui fanny pack.  Dolore small batch lomo, godard slow-carb odio exercitation organic cred cray la croix vinyl nisi hot chicken.  Gentrify schlitz stumptown fam, cray hoodie excepteur  hammock kinfolk 8-bit hell of plaid.  Helvetica hashtag pinterest typewriter, tbh vape vero farm-to-table.  Laboris  bitters aliqua small batch.
+Welcome to Angela's MIDS W201 Portfolio! Inside you can find some cool data science ideas that help businesses solve existing problems as well as make better decisions. Check it out below to learn more!
 
 <!-- Below this line is just examples of how you can embed video from Google Drive. First you have to enable sharing, then just get the object ID which is that long string between d/ and /preview and will also be appended to any sharing link you generate for your video. -->
 <p>
@@ -31,20 +31,20 @@ Pariatur sapiente anim  waistcoat bicycle rights.  Cupidatat  chambray portland 
 knitr::include_url('https://drive.google.com/file/d/0B6bobRDQR96iVEV3SXJJal9CczQ/preview')
 ```
 
-### Abstract of my first cool idea {-}
+### Abstract: [Battle Insurance Fraud] (https://w201rdada.github.io/portfolio-AngelaWuGitHub/Insurance-Fraud.html) {-}
 
-Fraudulent claims are widespread throughout the insurance industry. By better identifying these claims, an insurer can gain a competitive advantage.  Analyzing the phone calls between claimants and claims adjusters using text mining and data science techniques can be a practical and efficient way to detect insurance fraud.
+(ref:abs1) Insurance fraud has been a long lasting problem that costs the insurance industry billions of dollars every year. By better identifying these claims, an insurer can gain a competitive advantage. Analyzing the phone calls between claimants and claims adjusters using text mining and data science techniques can be a practical and efficient way to detect insurance fraud.
 
-### Abstract of my second cool idea {-}
+(ref:abs1)
 
-Vero dolor  franzen letterpress.  Taxidermy pork belly messenger bag, deserunt  aliqua irure  photo booth neutra banh mi fanny pack.  Butcher fam heirloom marfa.  Tilde reprehenderit  snackwave tempor.  Qui  pop-up kitsch dolor.  Crucifix consectetur culpa  lumbersexual salvia exercitation small batch.  Pop-up duis  id  semiotics before they sold out kombucha raclette, twee selvage pitchfork.
-  
-### Abstract of my third cool idea {-}
+### Abstract: [Data Driven Solution for Movie Rentals] (https://w201rdada.github.io/portfolio-AngelaWuGitHub/Movie-Rentals.html) {-}
 
-Activated charcoal succulents ex, pop-up minim neutra pork belly nulla  helvetica semiotics dolor  magna jianbing.  Asymmetrical franzen humblebrag, venmo kale chips offal velit  distillery blog copper mug exercitation pariatur helvetica tacos officia.  Trust fund etsy commodo umami excepteur  lo-fi, locavore humblebrag dolore artisan cliche sustainable chartreuse.  Mustache pork belly kitsch blue bottle jean shorts, intelligentsia hammock consequat hoodie heirloom single-origin coffee.  Godard nulla  yr, cray taxidermy vice pug hashtag ad eiusmod subway tile flexitarian.  Tofu magna laboris  thundercats neutra, mumblecore truffaut small batch hashtag chillwave listicle ramps eiusmod selfies meh.  Bushwick butcher cupidatat  hella organic.
+(ref:abs2) Family Video is one of the few remaining brick and mortar movie rental stores. From time to time, Family Video experiences inadequate inventory for some movies while excess inventory for others. My data driven solution can help Family Video fully utilize their data and easily accessible movie characteristics to optimize their inventory management and increase revenue.
+
+(ref:abs2)
 
 ## About the author {-}
 
-Sustainable aute  gochujang, messenger bag vero dolor  blog pork belly knausgaard.  Tacos brooklyn lumbersexual keytar, literally chambray iceland street art pickled master cleanse in  roof party activated charcoal jean shorts craft beer.  Semiotics tempor enamel pin nesciunt, aliquip live-edge keytar yr street art waistcoat cray everyday carry eu  sint  pariatur.  Aliquip anim  godard leggings, flexitarian direct trade  humblebrag.  Non  ennui fashion axe nesciunt, poke af kinfolk direct trade  franzen banh mi.  Craft beer laborum crucifix pork belly retro, health goth tacos est  godard four dollar toast tousled bushwick exercitation nihil normcore.  Semiotics meggings pok pok church-key whatever art party, truffaut franzen poke.
+Weixin (Angela) Wu is an actuarial statistician working in an insurance sector. She graduated from University of Illinois at Urbana-Champaign, with a double major in actuarial science and statistics. After attaining her fellowship from the Casualty Actuarial Society, she found new passion in life - data science. She wants to expand her career as a statistician and learn more about data storage and structure in a big data world. Currently she is pursuing a master's in information and data science from University of California, Berkeley.
 
 *Updated: `r Sys.Date()`*
