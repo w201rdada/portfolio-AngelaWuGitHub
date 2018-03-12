@@ -31,13 +31,13 @@ Welcome to Angela's MIDS W201 Portfolio! Inside you can find some cool data scie
 knitr::include_url('https://drive.google.com/file/d/0B6bobRDQR96iVEV3SXJJal9CczQ/preview')
 ```
 
-### Abstract: [Battle Insurance Fraud] (https://w201rdada.github.io/portfolio-AngelaWuGitHub/Insurance-Fraud.html) {-}
+### Abstract: [Battle Insurance Fraud](https://w201rdada.github.io/portfolio-AngelaWuGitHub/Insurance-Fraud.html) {-}
 
 (ref:abs1) Insurance fraud has been a long lasting problem that costs the insurance industry billions of dollars every year. By better identifying these claims, an insurer can gain a competitive advantage. Analyzing the phone calls between claimants and claims adjusters using text mining and data science techniques can be a practical and efficient way to detect insurance fraud.
 
 (ref:abs1)
 
-### Abstract: [Data Driven Solution for Movie Rentals] (https://w201rdada.github.io/portfolio-AngelaWuGitHub/Movie-Rentals.html) {-}
+### Abstract: [Data Driven Solution for Movie Rentals](https://w201rdada.github.io/portfolio-AngelaWuGitHub/Movie-Rentals.html) {-}
 
 (ref:abs2) Family Video is one of the few remaining brick and mortar movie rental stores. From time to time, Family Video experiences inadequate inventory for some movies while excess inventory for others. My data driven solution can help Family Video fully utilize their data and easily accessible movie characteristics to optimize their inventory management and increase revenue.
 
