@@ -1,7 +1,7 @@
 ---
 title: "W201 Portfolio"
-author: "Oski Bear"
-date: "MIDS Fall 2017"
+author: "Weixin Wu"
+date: "MIDS Spring 2018"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: references.bib
@@ -28,7 +28,7 @@ Welcome to Angela's MIDS W201 Portfolio! Inside you can find some cool data scie
 <!-- Below this line is just examples of how you can embed video from Google Drive. First you have to enable sharing, then just get the object ID which is that long string between d/ and /preview and will also be appended to any sharing link you generate for your video. -->
 <p>
 ```{r welcome-message,echo=FALSE,fig.cap='Welcome Message',fig.align='center'}
-knitr::include_url('https://drive.google.com/file/d/10EvlraSGEZQJZ3hMQmYlf-Oo01kj5lM8')
+knitr::include_url('https://drive.google.com/file/d/10EvlraSGEZQJZ3hMQmYlf-Oo01kj5lM8/preview')
 ```
 
 ### Abstract: [Battle Insurance Fraud](https://w201rdada.github.io/portfolio-AngelaWuGitHub/Insurance-Fraud.html) {-}
