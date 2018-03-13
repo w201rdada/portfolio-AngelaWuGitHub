@@ -1,5 +1,9 @@
 # Now Showing: Data Driven Solution for Movie Rentals {#Movie-Rentals}
 
+#### Abstract {-}
+
+(ref:abs2)
+
 #### Keywords {-}
 
 Family Video, movie rentals, inventory management, data driven model
