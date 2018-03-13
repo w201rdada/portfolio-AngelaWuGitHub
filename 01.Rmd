@@ -1,5 +1,9 @@
 # Battle Insurance Fraud with Text Mining and Data Science {#Insurance-Fraud}
 
+#### Abstract {-}
+
+(ref:abs1)
+
 #### Keywords {-}
 
 insurance, fraud, solution, real-time, text mining, data science
